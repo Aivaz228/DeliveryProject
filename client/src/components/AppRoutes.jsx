@@ -5,10 +5,10 @@ import Main from "./main";
 import Chat from "./Chat";
 
 const AppRoutes = () => (
-    <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/chat" element={<Chat />} />
-    </Routes>
+  <Routes>
+    <Route path="/" element={<Main />} />
+    <Route path="/chat" element={<Chat />} />
+  </Routes>
 );
 
 export default AppRoutes;
