@@ -27,7 +27,7 @@ const Main = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.container}>
-        <h1 className={styles.heading}>Join</h1>
+        <h1 className={styles.heading}>Общайся, пока ждешь заказ</h1>
 
         <form className={styles.form}>
           <div className={styles.group}>
