@@ -5,9 +5,12 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
 
+
 import icon from "../images/emoji.svg";
 import styles from "../styles/Chat.module.css";
 import Messages from "./Messages";
+
+
 
 const socket = io.connect("https://online-chat-900l.onrender.com");
 

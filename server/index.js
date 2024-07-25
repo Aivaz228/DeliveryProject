@@ -12,12 +12,12 @@ app.use(route);
 
 const server = http.createServer(app);
 
-const io = new Server(server, {
+const io = require('socket.io')(http, {
   cors: {
-    origin: "*",
-    methods: ["GET", "POST"],
-  },
-});
+  origin: "localhost:5000",
+  methods: ["GET", "POST"]
+  }
+  });
 
 io.on("connection", (socket) => {
   socket.on("join", ({ name, room }) => {
